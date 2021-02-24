@@ -6,7 +6,6 @@ export function fetchCharacters(action) {
     //.then(resp => resp.json())
     //.then(data => console.log(data))
 
-    return action
 
 }
 

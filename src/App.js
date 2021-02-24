@@ -5,11 +5,7 @@ import {fetchCharacters} from './actions/fetchCharacters'
 
 class App extends React.Component {
  
-componentDidMount() {
-  this.props.fetchCharacters({type: 'FETCH_CHARACTERS', payload: {name: 'Checking'}})
-}
-
- 
+  
   render() {
     return (
       <div className="App">
@@ -26,6 +22,6 @@ componentDidMount() {
  // }
 // }
 
-export default connect(null, {fetchCharacters})(App);
+export default connect()(App);
 
 
