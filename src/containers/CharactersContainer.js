@@ -30,4 +30,4 @@ const mapStateToProps = state => {
 }
 
 
-export default connect()[CharactersContainer]
+export default connect(mapStateToProps)[CharactersContainer]
