@@ -10,7 +10,7 @@ class CharactersContainer extends React.Component {
 
 
     componentDidMount() {
-        this.props.fetchCharacters()
+       // this.props.fetchCharacters()
     }
 
     render() {
@@ -31,4 +31,4 @@ const mapStateToProps = state => {
 }
 
 
-export default connect(mapStateToProps)[CharactersContainer]
+export default connect(mapStateToProps, {fetchCharacters})(CharactersContainer)
