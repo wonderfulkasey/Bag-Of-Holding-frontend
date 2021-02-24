@@ -3,6 +3,12 @@
 
 export default function characterReducer(state = {characters: []}, action) {
 
-    return state
+    switch (action.type) {
+        case  'FETCH_ACCOUNTS':
+            return state
+        default:
+            return state
+
+    }
 
 }

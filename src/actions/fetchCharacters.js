@@ -1,11 +1,13 @@
 
 
 export function fetchCharacters() {
-    console.log('inside fetch')
-    fetch('http://localhost:3000/api/v1/characters')
-    .then(resp => resp.json())
-    .then(data => console.log(data))
-
-
+    return (dispatch) => {
+        fetch('http://localhost:3000/api/v1/characters')
+        .then(resp => resp.json())
+        .then(characters => dispatch({
+          type: 'FETCH_CHARACTERS',
+          payload: characters
+        }))
+    }
 }
 
