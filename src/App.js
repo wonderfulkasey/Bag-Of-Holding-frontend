@@ -6,9 +6,7 @@ import {fetchCharacters} from './actions/fetchCharacters'
 class App extends React.Component {
  
 componentDidMount() {
-  //fetch('http://localhost:3000/api/v1/characters')
-  //.then(resp => resp.json())
-  //.then(data => console.log(data))
+  this.props.fetchCharacters()
 }
 
  
@@ -29,3 +27,5 @@ componentDidMount() {
 // }
 
 export default connect(null, {fetchCharacters})(App);
+
+
