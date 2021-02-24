@@ -1,6 +1,7 @@
 import React from 'react'
 
 
+
 class CharacterInput extends React.Component {
 
     render() {
