@@ -1,4 +1,5 @@
 import React from 'react';
+import {connect} from 'react-redux'
 
 
 class App extends React.Component {
@@ -19,4 +20,8 @@ componentDidMount() {
   
 }
 
-export default App;
+const mapStateToProps = (state) => {
+
+}
+
+export default connect(mapStateToProps)(App);
