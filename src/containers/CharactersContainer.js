@@ -17,7 +17,7 @@ class CharactersContainer extends React.Component {
         return (
             <div>
             <CharacterInput/>
-            <Characters/>
+            <Characters characters={this.props.characters} />
             </div>
         )
     }

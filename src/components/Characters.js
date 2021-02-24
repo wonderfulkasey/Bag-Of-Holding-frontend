@@ -2,9 +2,10 @@ import React from 'react'
 
 const Characters = (props) => {
 
+    
     return (
         <div>
-            Characters
+            {props.characters.map(character => <li> {character.name} </li> )}
         </div>
     )
 
