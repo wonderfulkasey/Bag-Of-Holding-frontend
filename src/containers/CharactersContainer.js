@@ -8,8 +8,9 @@ import CharacterInput from '../components/CharacterInput'
 
 class CharactersContainer extends React.Component {
 
+
     componentDidMount() {
-        fetchCharacters()
+        this.props.fetchCharacters()
     }
 
     render() {
