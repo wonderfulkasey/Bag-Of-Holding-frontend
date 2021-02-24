@@ -1,4 +1,6 @@
 import React from 'react'
+import {connect} from 'react-redux';
+
 import Characters from '../components/Characters'
 import CharacterInput from '../components/CharacterInput'
 
@@ -16,5 +18,11 @@ class CharactersContainer extends React.Component {
 
 }
 
+const mapStateToProps = state => {
+    return {
+        characters: state.characters
+    }
+}
 
-export default CharactersContainer
+
+export default connect()[CharactersContainer]

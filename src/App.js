@@ -22,6 +22,6 @@ class App extends React.Component {
  // }
 // }
 
-export default connect()(App);
+export default App;
 
 
