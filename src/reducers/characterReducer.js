@@ -1,8 +1,8 @@
 
 
 
-export default function characterReducer(state = {characters: []}, action ) {
+export default function characterReducer(state = {characters: []}, action) {
 
-    return state
+    return action.payload
 
 }

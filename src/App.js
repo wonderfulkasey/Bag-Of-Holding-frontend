@@ -6,7 +6,7 @@ import {fetchCharacters} from './actions/fetchCharacters'
 class App extends React.Component {
  
 componentDidMount() {
-  this.props.fetchCharacters()
+  this.props.fetchCharacters({type: 'FETCH_CHARACTERS', payload: {name: 'Checking'}})
 }
 
  
