@@ -9,7 +9,7 @@ import CharacterInput from '../components/CharacterInput'
 class CharactersContainer extends React.Component {
 
     componentDidMount() {
-        this.props.fetchCharacters()
+        fetchCharacters()
     }
 
     render() {

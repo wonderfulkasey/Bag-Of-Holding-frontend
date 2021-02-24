@@ -1,6 +1,6 @@
 import React from 'react';
-import {connect} from 'react-redux';
-import CharactersContainer from './containers/CharactersContainer.js'
+import {connect} from 'react-redux'
+import CharactersContainer from './containers/CharactersContainer'
 
 
 class App extends React.Component {
@@ -15,12 +15,6 @@ class App extends React.Component {
   }
   
 }
-
-//const mapStateToProps = (state) => {
- // return {
- //   characters: state.characters
- // }
-// }
 
 export default App;
 
