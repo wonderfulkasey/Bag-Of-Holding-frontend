@@ -21,7 +21,7 @@ class CharacterInput extends React.Component {
     render() {
         return (
             <div>
-                <form>
+                <form onSubmit={this.handleSubmit}>
                     <label> Character Name</label> <br/>
                     <input type='text' placeholder='Name' value={this.state.name} name="name" onChange={this.handleChange}/>
                     <input type="submit"/>
