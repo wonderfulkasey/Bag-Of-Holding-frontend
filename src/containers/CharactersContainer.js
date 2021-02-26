@@ -1,6 +1,6 @@
 import React from 'react'
 import {connect} from 'react-redux'
-import {Route} from 'react-router-dom'
+import {Route, Switch} from 'react-router-dom'
 import {fetchCharacters} from '../actions/fetchCharacters'
 import Characters from '../components/Characters'
 import Character from '../components/Character'
@@ -17,9 +17,11 @@ class CharactersContainer extends React.Component {
     render() {
         return (
             <div>
-                <Route path='/characters/new' component={CharacterInput} />
-                <Route path='/characters/:id' render={(routerProps) => <Character {...routerProps} characters={this.props.characters}/>} />
-                <Route exact path='/characters' render={(routerProps) => <Characters {...routerProps} characters={this.props.characters}/>} />
+                <Switch>
+                    <Route path='/characters/new' component={CharacterInput} />
+                    <Route path='/characters/:id' render={(routerProps) => <Character {...routerProps} characters={this.props.characters}/>} />
+                    <Route exact path='/characters' render={(routerProps) => <Characters {...routerProps} characters={this.props.characters}/>} />
+                </Switch>
              </div>
         )
     }
