@@ -16,6 +16,9 @@ class CharacterInput extends React.Component {
     handleSubmit = (event) => {
         event.preventDefault()
         this.props.addCharacter(this.state)
+        this.setState({
+            name: ''
+        })
     }
 
     render() {
