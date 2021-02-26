@@ -1,5 +1,7 @@
 import React from 'react'
+import {Redirect} from 'react-router-dom'
 
+import BagsContainer from '../containers/BagsContainer'
 
 const Character = (props) => {
 
@@ -7,9 +9,9 @@ const Character = (props) => {
     console.log(character)
 
     return (
-        <li>
+        <h3>
          {character ? character.name : null}
-        </li>
+        </h3>
     )
 }
 
