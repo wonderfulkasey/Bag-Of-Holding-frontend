@@ -4,12 +4,12 @@ import Character from './Character'
 
 const Characters = (props) => {
 
-    
     return (
         <div>
             {props.characters.map(character => 
                 <div key={character.id}><Character character={character}/></div> )}
         </div>
+        
     )
 }
 
