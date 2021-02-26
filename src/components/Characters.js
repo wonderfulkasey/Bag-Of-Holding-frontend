@@ -7,7 +7,11 @@ const Characters = (props) => {
         <div>
 
             {props.characters.map(character => 
-                <div key={character.id}><Character character={character}/></div> )}
+                <li key={character.id}>
+                    <Link to={`/characters/${character.id}`}>{character.name}</Link>
+                </li>
+                
+                )}
         
         </div>
     )
