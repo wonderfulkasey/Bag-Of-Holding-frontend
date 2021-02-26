@@ -8,4 +8,4 @@ const Bags = (props) => {
     )
 }
 
-export default Transactions
+export default Bags

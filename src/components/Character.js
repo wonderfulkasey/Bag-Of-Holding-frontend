@@ -9,10 +9,14 @@ const Character = (props) => {
     console.log(character)
 
     return (
-        <h3>
-         {character ? character.name : null}
-        </h3>
-    )
+        <div>
+            <h3>
+            {character ? character.name : null}
+            </h3>
+            
+            <BagsContainer character={character}/>
+        </div>
+   )
 }
 
 export default Character
