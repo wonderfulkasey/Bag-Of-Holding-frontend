@@ -3,14 +3,12 @@ import React from 'react'
 
 const Character = (props) => {
 
-    console.log(props)
-
     let character = props.characters[props.match.params.id - 1]
     console.log(character)
 
     return (
         <li>
-            {character ? character.name : null}
+         {character ? character.name : null}
         </li>
     )
 }
