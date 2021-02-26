@@ -20,7 +20,7 @@ class CharactersContainer extends React.Component {
                 <Switch>
                     <Route path='/characters/new' component={CharacterInput} />
                     <Route path='/characters/:id' render={(routerProps) => <Character {...routerProps} characters={this.props.characters}/>} />
-                    <Route exact path='/characters' render={(routerProps) => <Characters {...routerProps} characters={this.props.characters}/>} />
+                    <Route path='/characters' render={(routerProps) => <Characters {...routerProps} characters={this.props.characters}/>} />
                 </Switch>
              </div>
         )
