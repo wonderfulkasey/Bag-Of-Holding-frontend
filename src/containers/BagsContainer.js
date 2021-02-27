@@ -6,7 +6,7 @@ class BagsContainer extends React.Component {
     render() {
         return (
             <div>
-                <BagInput/>
+                <BagInput character={this.props.character} />
                 <Bags bags={this.props.character && this.props.character.bags}/>
             </div>
         )
