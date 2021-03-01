@@ -1,5 +1,3 @@
-
-
 export function fetchCharacters() {
     return (dispatch) => {
         fetch('http://localhost:3000/api/v1/characters')
