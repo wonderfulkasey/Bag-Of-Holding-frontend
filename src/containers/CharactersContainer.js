@@ -5,6 +5,7 @@ import {fetchCharacters} from '../actions/fetchCharacters'
 import Characters from '../components/Characters'
 import Character from '../components/Character'
 import CharacterInput from '../components/CharacterInput'
+import NavBar from '../components/NavBar'
 
 
 class CharactersContainer extends React.Component {
@@ -17,6 +18,7 @@ class CharactersContainer extends React.Component {
     render() {
         return (
             <div>
+                <NavBar/>
                 <Switch>
                     <Route path='/characters/new' component={CharacterInput} />
                     <Route path='/characters/:id' render={(routerProps) => <Character {...routerProps} characters={this.props.characters}/>} />
