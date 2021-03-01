@@ -37,4 +37,8 @@ class CharacterEdit extends React.Component {
     }
 }
 
+CharacterEdit.defaultProps = {
+    characters: {}
+}
+
 export default connect(null, {editCharacter})(CharacterEdit)
