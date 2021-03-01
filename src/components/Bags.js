@@ -16,9 +16,7 @@ class Bags extends React.Component {
                 {this.props.bags && this.props.bags.map(bag =>
         
                     <li key={bag.id}>{bag.title} - {bag.description}  <br/>
-                        <button onClick={() => this.handleDelete(bag)}>            
-                            Delete
-                        </button>
+                       
                     </li>
                 )}
             </div>
@@ -27,3 +25,9 @@ class Bags extends React.Component {
 }
 
 export default connect(null, {deleteBag})(Bags)
+
+
+//future delete button, in between li key tags
+//  <button onClick={() => this.handleDelete(bag)}>            
+// Delete
+// </button> 
