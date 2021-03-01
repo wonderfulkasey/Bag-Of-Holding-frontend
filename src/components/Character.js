@@ -16,7 +16,7 @@ const Character = (props) => {
             </h3>
             
             <BagsContainer character={character}/>
-            <h4>Edit Bag</h4>
+            <h4>Edit Character Name</h4>
             <CharacterEdit character={character}/>
         </div>
    )

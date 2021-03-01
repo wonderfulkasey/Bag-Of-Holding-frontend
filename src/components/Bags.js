@@ -18,6 +18,7 @@ class Bags extends React.Component {
         return (
             <div>
                 {this.props.bags && this.props.bags.map( bag =>
+        
                     <li key={bag.id}>{bag.title} - {bag.description}  <br/>
                         <button onClick={() => this.handleDelete(bag)}>
                            

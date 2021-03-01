@@ -27,7 +27,7 @@ class CharacterEdit extends React.Component {
         return (
             <div>
                 <form onSubmit={this.handleSubmit}>
-                    <label>Character Name</label>
+                    <label>Character Name: </label>
                     <input type='text' placeholder='Name' value={this.state.name} name="name" onChange={this.handleChange}/>
                     <br/>
                     <input type="submit"/>

@@ -33,6 +33,7 @@ class BagInput extends React.Component {
                     <br/>
                     <label>Bag Description:</label>
                     <input type="text" name="description" value={this.state.description} onChange={this.handleChange}/>
+                    <br/>
                     <input type="submit"/>
                 </form>
             </div>
