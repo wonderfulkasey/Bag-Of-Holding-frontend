@@ -9,8 +9,13 @@ export const addBag = (bag, characterId) => {
             body: JSON.stringify(bag)
         })
         .then(response => response.json())
-        .then(character => dispatch({type: 'ADD_BAG', payload: character}
-        ))
+       
+        .then(character => {
+            if (character.error) {
+                alert(character.error)
+            } else {
+                dispatch({type: 'ADD_BAG', payload: character})
+            }
+        }) 
     }
-
 }
