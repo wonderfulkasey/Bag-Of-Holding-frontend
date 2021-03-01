@@ -18,9 +18,23 @@ export default function characterReducer(state = {characters: []}, action) {
             })
             return {...state, characters: characters}
         case 'DELETE_BAG':
-        
+            let charactersTwo = state.characters.map(character => {
+                if (character.id === action.payload.id) {
+                    return action.payload
+                } else {
+                    return character
+                }
+            })
+            return {...state, characters: charactersTwo}
         case 'EDIT_CHARACTER':
-            let 
+            let charactersThree = state.characters.map(character => {
+                if (character.id === action.payload.id) {
+                    return action.payload
+                } else {
+                    return character
+                }
+            })
+            return {...state, characters: charactersThree}
 
         default:
             return state
