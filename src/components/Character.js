@@ -7,7 +7,6 @@ import BagsContainer from '../containers/BagsContainer'
 const Character = (props) => {
 
     let character = props.characters.filter(character => character.id == props.match.params.id)[0]
-    console.log(character)
 
     return (
         <div>

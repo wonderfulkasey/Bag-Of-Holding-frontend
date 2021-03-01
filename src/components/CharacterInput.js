@@ -5,7 +5,9 @@ import {addCharacter} from '../actions/addCharacter'
 
 class CharacterInput extends React.Component {
 
-    state = {name: ''}
+    state = {
+        name: ''
+    }
 
     handleChange = (event) => {
         this.setState({
