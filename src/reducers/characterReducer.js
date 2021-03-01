@@ -17,7 +17,11 @@ export default function characterReducer(state = {characters: []}, action) {
                 }
             })
             return {...state, characters: characters}
+        case 'DELETE_BAG':
         
+        case 'EDIT_CHARACTER':
+            let 
+
         default:
             return state
     }
