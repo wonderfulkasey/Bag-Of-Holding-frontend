@@ -1,3 +1,15 @@
+# Bag of Holding
+
+Welcome to my final Flatiron School Project, BAG OF HOLDING. 
+
+This project is done with a React.js/Redux.js frontend and a custom Rails API backend (which is linked below).
+
+RAILS API BACKEND: https://github.com/wonderfulkasey/Bag-Of-Holding-backend 
+
+BLOG: https://wonderfulkasey.github.io/bag_of_holding
+
+YOUTUBE WALKTHROUGH: https://youtu.be/snyx7tdXgkU
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
