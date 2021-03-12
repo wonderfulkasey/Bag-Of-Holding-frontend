@@ -1,6 +1,6 @@
 import React from 'react'
 import {Route, Link} from 'react-router-dom'
-import Character from './Character'
+//import Character from './Character'
 
 const Characters = (props) => {
     return (

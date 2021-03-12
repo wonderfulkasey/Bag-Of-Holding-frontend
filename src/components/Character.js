@@ -1,5 +1,5 @@
 import React from 'react'
-import {Redirect} from 'react-router-dom'
+//import {Redirect} from 'react-router-dom'
 import CharacterEdit from './CharacterEdit'
 
 import BagsContainer from '../containers/BagsContainer'
