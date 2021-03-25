@@ -30,6 +30,10 @@ class CharactersContainer extends React.Component {
 
 }
 
+//a function
+//returns a plain object containing data
+//for connected comp
+//is called whenever the redux store changes
 const mapStateToProps = state => {
     return {
         characters: state.characters

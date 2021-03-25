@@ -1,5 +1,7 @@
 export const addBag = (bag, characterId) => {
 
+    //dispatch is a function of the redux store
+    //only way to trigger a state change
     return (dispatch) => {
         fetch(`http://localhost:3000/api/v1/characters/${characterId}/bags`, {
             method: 'POST',

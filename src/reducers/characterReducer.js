@@ -1,4 +1,8 @@
 export default function characterReducer(state = {characters: []}, action) {
+//pass reducers to redux createstore function
+//returns an object
+//object goes to provider comp
+//ensures react-redux connect is available to all comps
 
     switch (action.type) {
         

@@ -1,5 +1,13 @@
 import React from 'react'
 import {connect} from 'react-redux'
+
+//connects react comp to redux store
+//gives it the data needed from store
+//does NOT modify comp class, returns new comp class wrapped 
+
+//comps NEVER access the store directly
+//only does it thru connect, thru dispatch
+
 import {addBag} from '../actions/addBag'
 
 class BagInput extends React.Component {

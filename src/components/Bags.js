@@ -2,6 +2,10 @@ import React from 'react'
 import {connect} from 'react-redux'
 import {deleteBag} from '../actions/deleteBag'
 
+//class component - stateful
+//react lifecycle methods can be used
+//can pass props down to class comps
+//and access them w this.props
 class Bags extends React.Component {
 
     state = {}

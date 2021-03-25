@@ -9,6 +9,13 @@ class CharacterInput extends React.Component {
         name: ''
     }
 
+        //state object is where you store prop values that
+        //BELONG to the comp
+        //when state object changes, comp re-renders
+        //state can contain many props
+        //refer to state as this.state.propname
+        //change value using this.setState()
+
     handleChange = (event) => {
         this.setState({
             [event.target.name]: event.target.value
