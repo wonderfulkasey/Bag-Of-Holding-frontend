@@ -15,6 +15,7 @@ class CharacterEdit extends React.Component {
     }
 
     handleSubmit = (event) => {
+        //the next part is the "thunk"
         event.preventDefault()
         let character = {...this.state, id: this.props.character.id}
         this.props.editCharacter(character)
