@@ -12,9 +12,7 @@ class CharactersContainer extends React.Component {
 
 
     componentDidMount() {
-        console.log("a")
        this.props.fetchCharacters()
-       console.log("b")
     }
 
     render() {
