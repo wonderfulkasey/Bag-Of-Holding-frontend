@@ -1,6 +1,7 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import {deleteBag} from '../actions/deleteBag'
+import BagLiker from '../components/BagLiker'
 
 //class component - stateful
 //react lifecycle methods can be used
@@ -20,6 +21,7 @@ class Bags extends React.Component {
                 {this.props.bags && this.props.bags.map(bag =>
         
                     <li key={bag.id}>{bag.title} - {bag.description}  <br/>
+                    <BagLiker></BagLiker>
                        
                     </li>
                 )}
