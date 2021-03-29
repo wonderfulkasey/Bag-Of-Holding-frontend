@@ -12,6 +12,7 @@ class DashboardContainer extends React.Component {
         return (
             <div>
                 <Switch>
+                    <h1>Application</h1>
                     <Route path='/dashboard' component={Dashboard} />
                     <Route path='/preferences' component={Preferences} />
                 </Switch>
